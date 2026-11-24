@@ -1,0 +1,26 @@
+{
+  "name": "fixflow",
+  "version": "1.0.0",
+  "description": "FixFlow — Maintenance & Repairs Ticket System (601316 Modern Programming Language)",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "maintenance",
+    "tickets",
+    "express",
+    "ejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
