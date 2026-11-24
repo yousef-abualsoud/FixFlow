@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<main class="container py-4">
+    <h1>About FixFlow</h1>
+
+    <p>
+        Maintenance requests can get lost when residents report them
+        through phone calls, messages, or paper notes. FixFlow brings
+        these requests into one place so residents can track repairs.
+    </p>
+
+    <h2>Our Team</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Student ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (const member of teamMembers) { %>
+                <tr>
+                    <td><%= member.name %></td>
+                    <td><%= member.studentId %></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</main>
+
+<%- include('partials/footer') %>

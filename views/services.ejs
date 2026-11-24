@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<main class="container py-4">
+    <h1>Maintenance Services</h1>
+    <p>Explore the types of maintenance issues covered by FixFlow.</p>
+
+    <% if (services.length > 0) { %>
+        <div class="row g-3">
+            <% for (const service of services) { %>
+                <div class="col-md-6">
+                    <section class="card h-100 p-3">
+                        <h2 class="h5"><%= service.name %></h2>
+                        <p class="mb-0"><%= service.description %></p>
+                    </section>
+                </div>
+            <% } %>
+        </div>
+    <% } else { %>
+        <p>No maintenance services are available at the moment.</p>
+    <% } %>
+</main>
+
+<%- include('partials/footer') %>

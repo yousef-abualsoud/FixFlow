@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<main class="container py-4">
+    <h1>Welcome to <%= appName %></h1>
+
+    <p>
+        FixFlow helps residents report maintenance issues and
+        follow the progress of their repair tickets.
+    </p>
+
+    <% if (announcement) { %>
+        <section class="card p-3 mb-4">
+            <h2>Latest Update</h2>
+            <p class="mb-0"><%= announcement %></p>
+        </section>
+    <% } %>
+
+    <a href="/services" class="btn btn-primary">Explore Services</a>
+    <a href="/about" class="btn btn-outline-secondary">Meet the Team</a>
+</main>
+
+<%- include('partials/footer') %>
