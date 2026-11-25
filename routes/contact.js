@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
-// TODO (Member 4): GET /contact -> res.render('contact')
-
+router.get('/', (req, res) => {
+    res.render('contact', { title: 'Contact Us' });
+});
 module.exports = router;
