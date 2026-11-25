@@ -1,0 +1,101 @@
+:root {
+    --fixflow-primary: #0f766e;
+    --fixflow-primary-dark: #115e59;
+    --fixflow-accent: #14b8a6;
+    --fixflow-ink: #1f2933;
+    --fixflow-muted: #64748b;
+}
+
+body {
+    color: var(--fixflow-ink);
+    background-color: #f6f8f8;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Navigation */
+.site-navbar {
+    background: linear-gradient(90deg, var(--fixflow-primary-dark), var(--fixflow-primary) 55%, var(--fixflow-accent));
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.15);
+}
+
+.site-navbar .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.site-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.85rem;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Main content */
+main h1 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.error-code {
+    color: var(--fixflow-primary);
+}
+
+main .card {
+    border: 1px solid rgba(15, 118, 110, 0.14);
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+main .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.1);
+}
+
+main .table {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+main .table thead th {
+    background-color: rgba(15, 118, 110, 0.08);
+    color: var(--fixflow-primary-dark);
+    border-bottom-color: rgba(15, 118, 110, 0.2);
+}
+
+/* Buttons */
+.btn-primary {
+    --bs-btn-bg: var(--fixflow-primary);
+    --bs-btn-border-color: var(--fixflow-primary);
+    --bs-btn-hover-bg: var(--fixflow-primary-dark);
+    --bs-btn-hover-border-color: var(--fixflow-primary-dark);
+    --bs-btn-active-bg: var(--fixflow-primary-dark);
+    --bs-btn-active-border-color: var(--fixflow-primary-dark);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--fixflow-primary);
+    --bs-btn-border-color: var(--fixflow-primary);
+    --bs-btn-hover-bg: var(--fixflow-primary);
+    --bs-btn-hover-border-color: var(--fixflow-primary);
+    --bs-btn-active-bg: var(--fixflow-primary-dark);
+    --bs-btn-active-border-color: var(--fixflow-primary-dark);
+}
+
+/* Footer */
+.site-footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.site-footer .small {
+    color: #94a3b8;
+}

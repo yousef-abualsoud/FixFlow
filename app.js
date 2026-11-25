@@ -22,8 +22,10 @@ app.use('/services', servicesRouter);
 app.use('/tickets', ticketsRouter);
 app.use('/contact', contactRouter);
 
-// TODO (Member 4): catch-all 404 middleware goes here
-// app.use((req, res) => res.status(404).render('error404'));
+// Catch-all 404 for any route that did not match above
+app.use((req, res) => {
+  res.status(404).render('error404', { title: 'Page Not Found' });
+});
 
 app.listen(PORT, () => {
   console.log(`FixFlow running at http://localhost:${PORT}`);

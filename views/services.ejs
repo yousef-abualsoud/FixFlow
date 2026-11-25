@@ -12,6 +12,11 @@
                     <section class="card h-100 p-3">
                         <h2 class="h5"><%= service.name %></h2>
                         <p class="mb-0"><%= service.description %></p>
+                        <% if (service.sampleTicketId) { %>
+                            <a href="/tickets/<%= service.sampleTicketId %>" class="btn btn-sm btn-outline-primary mt-3 align-self-start">
+                                View sample ticket
+                            </a>
+                        <% } %>
                     </section>
                 </div>
             <% } %>

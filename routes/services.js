@@ -5,19 +5,23 @@ const router = express.Router();
 const services = [
     {
         name: 'Plumbing',
-        description: 'Report leaking pipes, blocked drains, or broken taps.'
+        description: 'Report leaking pipes, blocked drains, or broken taps.',
+        sampleTicketId: 1
     },
     {
         name: 'Electrical Repairs',
-        description: 'Report faulty lights, switches, or power outlets.'
+        description: 'Report faulty lights, switches, or power outlets.',
+        sampleTicketId: 2
     },
     {
         name: 'Heating',
-        description: 'Report a broken heater or a heating system issue.'
+        description: 'Report a broken heater or a heating system issue.',
+        sampleTicketId: 3
     },
     {
         name: 'Elevator Maintenance',
-        description: 'Report an elevator that is out of service.'
+        description: 'Report an elevator that is out of service.',
+        sampleTicketId: 4
     }
 ];
 
